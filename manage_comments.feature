@@ -34,7 +34,7 @@ Feature: Comment Management
     Then I should see "Name can't be blank"
     And I should see "Email is invalid"
     And I should see "Website is invalid"
-    And I should see "Body can't be blank"
+    And I should see "Comment can't be blank"
 		
   Scenario: Attempt to leave an invalid comment (Email empty)
     Given I follow "Ruby"

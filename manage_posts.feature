@@ -38,7 +38,7 @@ Feature: Manage posts
     When I go to post list page
     Then I should see "draft title 1"
     And I should see "draft body 1"
-    When I sign out
+    When I follow "Sign out"
     And I go to post list page
     Then I should not see "draft title 1"
     And I should not see "draft body 1"

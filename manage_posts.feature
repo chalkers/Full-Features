@@ -13,7 +13,7 @@ Feature: Manage posts
     And I am on the new post page
     When I fill in "Title" with "title 1"
     And I fill in "Body" with "body 1"
-    And I press "Create"
+    And I press "Create Post"
     Then I should see "title 1"
     And I should see "body 1"
 
@@ -22,7 +22,7 @@ Feature: Manage posts
     And I am on the new post page
     When I fill in "Title" with ""
     And I fill in "Body" with ""
-    And I press "Create"
+    And I press "Create Post"
     Then I should see "Title can't be blank"
     And I should see "Body can't be blank"
 
@@ -32,7 +32,7 @@ Feature: Manage posts
     When I fill in "Title" with "draft title 1"
     And I fill in "Body" with "draft body 1"
     And I uncheck "Published"
-    And I press "Create"
+    And I press "Create Post"
     Then I should see "draft title 1"
     And I should see "draft body 1"
     When I go to post list page
@@ -96,7 +96,7 @@ Feature: Manage posts
     And I follow "Edit Post"
     And I fill in "Title" with "title 1"
     And I fill in "Body" with "body 1"
-    And I press "Update"
+    And I press "Update Post"
     Then I should see "title 1"
     And I should see "body 1"
     And I should not see "Ruby"

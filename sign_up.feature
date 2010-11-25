@@ -4,4 +4,6 @@ Feature: Sign up
   Shouldn't be able to sign up
 
   Scenario: Users cannot sign up
-    Given I visit the sign up page I should get an exception
+    When I go to the sign up page
+    Then I should see "You cannot sign up"
+    And I should be on the homepage
